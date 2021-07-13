@@ -397,7 +397,7 @@ function set_hostname() {
     'https://domains.google.com/checkip'
   )
   for url in "${urls[@]}"; do
-    PUBLIC_HOSTNAME="150.138.84.13" && return
+    PUBLIC_HOSTNAME="103.45.173.174" && return
   done
   echo "Failed to determine the server's IP address.  Try using --hostname <server IP>." >&2
   return 1
