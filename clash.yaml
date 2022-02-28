@@ -129,4 +129,3 @@ rules:
 #  - DOMAIN-SUFFIX,wbt1.cc,Work
 #  - IP-CIDR,45.61.236.74/22,Work
 # - 'MATCH,DIRECT'
-
