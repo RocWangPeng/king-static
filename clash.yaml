@@ -117,7 +117,7 @@ proxies:
     # network: ws    # 网路类型 WS HTTP 等
     ws-path: /uu7899  # 路径
     # ws-headers:     #默认不开启
-    #  Host: v2ray.com    # HOST
+     Host: 3gmma.com    # HOST
 # # 代理组策略		
 # proxy-groups:
 #   - name: Work
