@@ -104,11 +104,11 @@ proxies:
     obfs: http_simple
 
 # 代理组策略		
-# proxy-groups:
-#   - name: Work
-#     type: select
-#     proxies:
-#       - Japan-日本
+proxy-groups:
+  - name: Work
+    type: select
+    proxies:
+      - Japan-日本
 rules:
 #  - DOMAIN-SUFFIX,v255mg.com,Work
 #  - DOMAIN-SUFFIX,wbt1.cc,Work
