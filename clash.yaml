@@ -102,22 +102,22 @@ proxies:
     password: fXkoGfWfOoDiLsEb
     protocol: auth_sha1_v4
     obfs: http_simple
- - name: usa
-   type: vmess # 代理类型
-   server: 154.17.18.194 # 服务器 IP
-   port: 443 #  端口号
-   uuid: b72dbd90-00a9-4b86-ae17-46c81d22cc2b
-   alterId: 2233  #额外的 ID
-   cipher: auto
-   #上面几行为必选参数
-   #下面几行为可选参数  根据你的配置情况来
-   # udp: true    #默认不开启
-   tls: true      #TLS 开启
-   # skip-cert-verify: true     #默认不开启
-   # network: ws    # 网路类型 WS HTTP 等
-   ws-path: /uu7899  # 路径
-   # ws-headers:     #默认不开启
-   #  Host: v2ray.com    # HOST
+  - name: usa
+    type: vmess # 代理类型
+    server: 154.17.18.194 # 服务器 IP
+    port: 443 #  端口号
+    uuid: b72dbd90-00a9-4b86-ae17-46c81d22cc2b
+    alterId: 2233  #额外的 ID
+    cipher: auto
+    #上面几行为必选参数
+    #下面几行为可选参数  根据你的配置情况来
+    # udp: true    #默认不开启
+    tls: true      #TLS 开启
+    # skip-cert-verify: true     #默认不开启
+    # network: ws    # 网路类型 WS HTTP 等
+    ws-path: /uu7899  # 路径
+    # ws-headers:     #默认不开启
+    #  Host: v2ray.com    # HOST
 # # 代理组策略		
 # proxy-groups:
 #   - name: Work
