@@ -96,10 +96,10 @@ proxies:
     obfs: http_simple
   - name: India-印度
     type: ssr
-    server: 147.139.5.55
-    port: 8888
+    server: 13.232.14.21
+    port: 50011
     cipher: aes-256-cfb
-    password: GFHhujkjkY
+    password: fXkoGfWfOoDiLsEb
     protocol: auth_sha1_v4
     obfs: http_simple
 
