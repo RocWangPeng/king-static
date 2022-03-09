@@ -125,8 +125,6 @@ proxies:
     port: 1499
     cipher: chacha20-ietf-poly1305
     password: Zc3c1FtnWm7d
-    protocol: auth_sha1_v4
-    obfs: http_simple
 # # 代理组策略		
 # proxy-groups:
 #   - name: Work
