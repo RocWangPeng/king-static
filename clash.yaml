@@ -120,7 +120,7 @@ proxies:
       Host: 3gmma.com
      path: /uu7899
   - name: usa2
-    type: ssr
+    type: ss
     server: 154.17.18.139
     port: 1499
     cipher: chacha20-ietf-poly1305
