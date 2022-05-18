@@ -118,7 +118,7 @@ proxies:
     ws-opts:
      headers:
      # Host: 3gmma.com
-     path: /af81144dc252b94/
+      path: /af81144dc252b94/
   - name: usa2
     type: ss
     server: 154.17.18.139
