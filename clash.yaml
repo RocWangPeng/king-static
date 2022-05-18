@@ -104,10 +104,10 @@ proxies:
     obfs: http_simple
   - name: usa
     type: vmess # 代理类型
-    server: 154.17.18.194 # 服务器 IP
+    server: jklahblog.com # 服务器 IP
     port: 443 #  端口号
-    uuid: b72dbd90-00a9-4b86-ae17-46c81d22cc2b
-    alterId: 2233  #额外的 ID
+    uuid: 96edbdf0-c8b8-49f2-839e-940698bbf83d
+    alterId: 2  #额外的 ID
     cipher: auto
     #上面几行为必选参数
     #下面几行为可选参数  根据你的配置情况来
@@ -117,8 +117,8 @@ proxies:
     network: ws    # 网路类型 WS HTTP 等
     ws-opts:
      headers:
-      Host: 3gmma.com
-     path: /uu7899
+     # Host: 3gmma.com
+     path: /af81144dc252b94/
   - name: usa2
     type: ss
     server: 154.17.18.139
