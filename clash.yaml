@@ -102,7 +102,7 @@ proxies:
     password: fXkoGfWfOoDiLsEb
     protocol: auth_sha1_v4
     obfs: http_simple
-  - name: usa
+  - name: India-new
     type: vmess # 代理类型
     server: jklahblog.com # 服务器 IP
     port: 443 #  端口号
