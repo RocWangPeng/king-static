@@ -116,9 +116,9 @@ proxies:
     # skip-cert-verify: true     #默认不开启
     network: ws    # 网路类型 WS HTTP 等
     ws-opts:
-     headers:
+    # headers:
      # Host: 3gmma.com
-      path: /af81144dc252b94/
+     path: /af81144dc252b94/
   - name: usa2
     type: ss
     server: 154.17.18.139
