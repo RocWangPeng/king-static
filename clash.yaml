@@ -7,6 +7,8 @@ log-level: info
 external-controller: '0.0.0.0:9090'
 secret: ''
 
+# 文档
+# https://lancellc.gitbook.io/clash/clash-config-file/proxies
 
 # 代理节点
 
@@ -86,14 +88,6 @@ secret: ''
 
 # 配置开始
 proxies:
-  - name: Japan-日本
-    type: ssr
-    server: 54.199.98.203
-    port: 9380
-    cipher: aes-256-cfb
-    password: H5rbrYwJQ1CDnJdF
-    protocol: auth_sha1_v4
-    obfs: http_simple
   - name: hk-work
     type: vmess # 代理类型
     server: hkhhdan.com  # 服务器 IP
