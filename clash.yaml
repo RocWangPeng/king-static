@@ -94,14 +94,21 @@ proxies:
     password: H5rbrYwJQ1CDnJdF
     protocol: auth_sha1_v4
     obfs: http_simple
-  - name: India-印度
-    type: ssr
-    server: 13.232.14.21
-    port: 50011
-    cipher: aes-256-cfb
-    password: fXkoGfWfOoDiLsEb
-    protocol: auth_sha1_v4
-    obfs: http_simple
+  - name: India-new
+    type: vmess # 代理类型
+    server: hkhhdan.com  # 服务器 IP
+    port: 443 #  端口号
+    uuid: 7fda537a-174a-4e6e-a1f8-c2fffbb83c00
+    alterId: 2  #额外的 ID
+    cipher: auto
+    #上面几行为必选参数
+    #下面几行为可选参数  根据你的配置情况来
+    # udp: true    #默认不开启
+    tls: true      #TLS 开启
+    # skip-cert-verify: true     #默认不开启
+    network: ws    # 网路类型 WS HTTP 等
+    ws-opts:
+     path: /87e0e7d0/
   - name: India-new
     type: vmess # 代理类型
     server: jklahblog.com # 服务器 IP
