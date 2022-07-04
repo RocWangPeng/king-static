@@ -9,7 +9,6 @@ secret: ''
 
 # 文档
 # https://lancellc.gitbook.io/clash/clash-config-file/proxies
-
 # 代理节点
 
 # Shadowsocks 支持的加密方式:
