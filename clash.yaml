@@ -134,7 +134,7 @@ proxies:
     #udp: true
     protocol: auth_sha1_v4
     obfs: http_simple
-# # 代理组策略	
+ # 代理组策略	
 # proxy-groups:
 #   - name: Work
 #     type: select
