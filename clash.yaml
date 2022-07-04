@@ -124,6 +124,16 @@ proxies:
     port: 1499
     cipher: chacha20-ietf-poly1305
     password: Zc3c1FtnWm7d
+  #第三种配置 ssr
+  - name: "India-work2"               # 软件显示的节点名字
+    type: ssr                                  # 代理类型
+    server: 147.139.65.214 # 服务器IP
+    port: 8888                                 #  端口号
+    cipher: aes-256-cfb   # 加密方法
+    password: "GFHhujkjkY"                # SS密码
+    #udp: true
+    protocol: auth_sha1_v4_compatible
+    obfs: http_simple_compatible
 # # 代理组策略	
 # proxy-groups:
 #   - name: Work
