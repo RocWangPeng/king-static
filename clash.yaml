@@ -123,6 +123,12 @@ proxies:
     port: 1499
     cipher: chacha20-ietf-poly1305
     password: Zc3c1FtnWm7d
+  - name: eluosi
+    type: ss
+    server: 91.206.92.176
+    port: 35030
+    cipher: chacha20-ietf-poly1305
+    password: FCx0i7b33H9G
   #第三种配置 ssr
   - name: "India-work2"               # 软件显示的节点名字
     type: ssr                                  # 代理类型
