@@ -160,9 +160,8 @@ proxy-groups:
       - hk-dogyun
 rules:
 #  - DOMAIN-SUFFIX,v255mg.com,Work
-#  - DOMAIN-SUFFIX,wbt1.cc,Work
+  - DOMAIN-SUFFIX,t.me,PROXY
 #  - IP-CIDR,45.61.236.74/22,Work
-# - 'MATCH,DIRECT'
   - GEOIP,CN,DIRECT
   - GEOIP,AE,PROXY
   - GEOIP,AU,PROXY
