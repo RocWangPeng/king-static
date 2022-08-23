@@ -153,11 +153,11 @@ proxy-groups:
       - India-work
       - India-work2
       - hk-work
-#   - name: Mine
-#     type: select
-#     proxies:
-#       - eluosi
-#       - hk-dogyun
+  - name: Mine
+    type: mine
+    proxies:
+      - eluosi
+      - hk-dogyun
 rules:
 #  - DOMAIN-SUFFIX,v255mg.com,Work
 #  - DOMAIN-SUFFIX,wbt1.cc,Work
