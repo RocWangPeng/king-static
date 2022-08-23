@@ -154,7 +154,7 @@ proxy-groups:
       - India-work2
       - hk-work
   - name: Mine
-    type: mine
+    type: select
     proxies:
       - eluosi
       - hk-dogyun
