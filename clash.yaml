@@ -153,33 +153,17 @@ proxy-groups:
       - India-work
       - India-work2
       - hk-work
-  - name: Mine
-    type: select
-    proxies:
-      - eluosi
-      - hk-dogyun
+#   - name: Mine
+#     type: select
+#     proxies:
+#       - eluosi
+#       - hk-dogyun
 rules:
 #  - DOMAIN-SUFFIX,v255mg.com,Work
 #  - DOMAIN-SUFFIX,wbt1.cc,Work
 #  - IP-CIDR,45.61.236.74/22,Work
 # - 'MATCH,DIRECT'
-  - PROCESS-NAME,v2ray,DIRECT
-  - PROCESS-NAME,Surge%203,DIRECT
-  - PROCESS-NAME,ss-local,DIRECT
-  - PROCESS-NAME,privoxy,DIRECT
-  - PROCESS-NAME,trojan,DIRECT
-  - PROCESS-NAME,trojan-go,DIRECT
-  - PROCESS-NAME,naive,DIRECT
-  - PROCESS-NAME,Thunder,DIRECT
-  - PROCESS-NAME,DownloadService,DIRECT
-  - PROCESS-NAME,qBittorrent,DIRECT
-  - PROCESS-NAME,Transmission,DIRECT
-  - PROCESS-NAME,fdm,DIRECT
-  - PROCESS-NAME,aria2c,DIRECT
-  - PROCESS-NAME,Folx,DIRECT
-  - PROCESS-NAME,NetTransport,DIRECT
-  - PROCESS-NAME,uTorrent,DIRECT
-  - PROCESS-NAME,WebTorrent,DIRECT
+  - GEOIP,CN,DIRECT
   - GEOIP,AE,PROXY
   - GEOIP,AU,PROXY
   - GEOIP,BR,PROXY
