@@ -129,6 +129,12 @@ proxies:
     port: 35030
     cipher: chacha20-ietf-poly1305
     password: FCx0i7b33H9G
+  - name: hk-dogyun
+    type: ss
+    server: 45.89.234.2
+    port: 47695
+    cipher: chacha20-ietf-poly1305
+    password: akGvXeowpCct
   #第三种配置 ssr
   - name: "India-work2"               # 软件显示的节点名字
     type: ssr                                  # 代理类型
