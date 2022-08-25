@@ -153,12 +153,15 @@ proxy-groups:
       - India-work
       - India-work2
       - hk-work
-  - name: Mine
-    type: select
-    proxies:
-      - eluosi
+      - eluosi-justhost
       - hk-dogyun
       - usa-dmit
+#   - name: Mine
+#     type: select
+#     proxies:
+#       - eluosi
+#       - hk-dogyun
+#       - usa-dmit
 rules:
 #  - DOMAIN-SUFFIX,v255mg.com,Work
   - DOMAIN-SUFFIX,t.me,PROXY
