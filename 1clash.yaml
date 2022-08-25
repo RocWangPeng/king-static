@@ -1,0 +1,282 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+allow-lan: false
+mode: Rule
+log-level: info
+external-controller: '0.0.0.0:9090'
+secret: ''
+
+# 文档
+# https://lancellc.gitbook.io/clash/clash-config-file/proxies
+# 代理节点
+
+# Shadowsocks 支持的加密方式:
+#   aes-128-gcm aes-192-gcm aes-256-gcm
+#   aes-128-cfb aes-192-cfb aes-256-cfb
+#   aes-128-ctr aes-192-ctr aes-256-ctr
+#   rc4-md5 chacha20-ietf xchacha20
+#   chacha20-ietf-poly1305 xchacha20-ietf-poly1305
+
+# 配置范本
+# Shadowsocks 配置范本
+# 第一种配置
+#- name: "你的SS节点1"               # 软件显示的节点名字
+#  type: ss                                  # 代理类型
+#  server: 1.2.4.8                          # 服务器 IP
+#  port: 443                                 #  端口号
+#  cipher: chacha20-ietf-poly1305   # 加密方法
+#  password: "password"                # SS 密码
+#  # udp: true                                #默认不开启
+  
+#第二种配置
+# Shadowsocks + simple-obfs   配置范本
+#- name: "你的SS节点2"
+#  type: ss
+#  server: 1.2.4.8
+#  port: 443
+#  cipher: chacha20-ietf-poly1305
+#  password: "password"
+#  plugin: obfs
+#  plugin-opts:                 
+#    mode: tls # or http               #  大部分选择 HTTP
+#    # host: bing.com                  #  伪装
+
+# 第三种配置 ssr
+#- name: "你的SS节点1"               # 软件显示的节点名字
+#  type: ssr                                  # 代理类型
+#  server: 1.2.4.8                          # 服务器IP
+#  port: 443                                 #  端口号
+#  cipher: chacha20-ietf-poly1305   # 加密方法
+#  password: "password"                # SS密码
+#  #udp: true
+#  protocol: auth_sha1_v4
+#  obfs: http_simple
+ 
+# VMess 的配置
+#- name: "你的V2RAY节点1" # 软件显示的节点名字
+#  type: vmess # 代理类型
+#  server: v2rayssr.com # 服务器 IP
+#  port: 443 #  端口号
+#  uuid: a3482e88-686a-4a58-8126-99c9df64b7bf
+#  alterId: 64  #额外的 ID
+#  cipher: auto
+#  #上面几行为必选参数
+#  #下面几行为可选参数  根据你的配置情况来
+#  # udp: true    #默认不开启
+#  # tls: true      #TLS 开启
+#  # skip-cert-verify: true     #默认不开启
+#  # network: ws    # 网路类型 WS HTTP 等
+#  # ws-path: /path  # 路径
+#  # ws-headers:     #默认不开启
+#  #  Host: v2ray.com    # HOST
+
+# Trojan 的配置
+#- name: "trojan"
+#  type: trojan
+#  server: server
+#  port: 443
+#  password: yourpsk
+#  # udp: true
+#  # sni: example.com # aka server name
+#  # alpn:
+#  #   - h2
+#  #   - http/1.1
+#  # skip-cert-verify: true
+
+
+# 配置开始
+proxies:
+  - name: hk-work
+    type: vmess # 代理类型
+    server: hkhhdan.com  # 服务器 IP
+    port: 443 #  端口号
+    uuid: 7fda537a-174a-4e6e-a1f8-c2fffbb83c00
+    alterId: 2  #额外的 ID
+    cipher: auto
+    #上面几行为必选参数
+    #下面几行为可选参数  根据你的配置情况来
+    # udp: true    #默认不开启
+    tls: true      #TLS 开启
+    # skip-cert-verify: true     #默认不开启
+    network: ws    # 网路类型 WS HTTP 等
+    ws-opts:
+     path: /87e0e7d0/
+  - name: India-work
+    type: vmess # 代理类型
+    server: jklahblog.com # 服务器 IP
+    port: 443 #  端口号
+    uuid: 96edbdf0-c8b8-49f2-839e-940698bbf83d
+    alterId: 2  #额外的 ID
+    cipher: auto
+    #上面几行为必选参数
+    #下面几行为可选参数  根据你的配置情况来
+    # udp: true    #默认不开启
+    tls: true      #TLS 开启
+    # skip-cert-verify: true     #默认不开启
+    network: ws    # 网路类型 WS HTTP 等
+    ws-opts:
+     path: /af81144dc252b94/
+  - name: usa-dmit
+    type: ss
+    server: 154.17.18.139
+    port: 1499
+    cipher: chacha20-ietf-poly1305
+    password: Zc3c1FtnWm7d
+  - name: eluosi-justhost
+    type: ss
+    server: 91.206.92.176
+    port: 35030
+    cipher: chacha20-ietf-poly1305
+    password: FCx0i7b33H9G
+  - name: hk-dogyun
+    type: ss
+    server: 45.89.234.2
+    port: 47695
+    cipher: chacha20-ietf-poly1305
+    password: akGvXeowpCct
+  #第三种配置 ssr
+  - name: "India-work2"               # 软件显示的节点名字
+    type: ssr                                  # 代理类型
+    server: 147.139.65.214 # 服务器IP
+    port: 8888                                 #  端口号
+    cipher: aes-256-cfb   # 加密方法
+    password: "GFHhujkjkY"                # SS密码
+    #udp: true
+    protocol: auth_sha1_v4
+    obfs: http_simple
+ # 代理组策略	
+proxy-groups:
+  - name: PROXY
+    type: select
+    proxies:
+      - India-work
+      - India-work2
+      - hk-work
+      - eluosi-justhost
+      - hk-dogyun
+      - usa-dmit
+#   - name: Mine
+#     type: select
+#     proxies:
+#       - eluosi
+#       - hk-dogyun
+#       - usa-dmit
+
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt"
+    path: ./ruleset/reject.yaml
+    interval: 86400
+
+  icloud:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt"
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+
+  apple:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt"
+    path: ./ruleset/apple.yaml
+    interval: 86400
+
+  google:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/google.txt"
+    path: ./ruleset/google.yaml
+    interval: 86400
+
+  proxy:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt"
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+
+  direct:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt"
+    path: ./ruleset/direct.yaml
+    interval: 86400
+
+  private:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt"
+    path: ./ruleset/private.yaml
+    interval: 86400
+
+  gfw:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt"
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+
+  greatfire:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/greatfire.txt"
+    path: ./ruleset/greatfire.yaml
+    interval: 86400
+
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt"
+    path: ./ruleset/tld-not-cn.yaml
+    interval: 86400
+
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt"
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400
+
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt"
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt"
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+
+  applications:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt"
+    path: ./ruleset/applications.yaml
+    interval: 86400
+
+
+rules:
+  - RULE-SET,applications,DIRECT
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,reject,REJECT
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+  - RULE-SET,google,DIRECT
+  - RULE-SET,proxy,PROXY
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,cncidr,DIRECT
+  - RULE-SET,telegramcidr,PROXY
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,PROXY
