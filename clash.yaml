@@ -123,7 +123,7 @@ proxies:
     port: 1499
     cipher: chacha20-ietf-poly1305
     password: Zc3c1FtnWm7d
-  - name: eluosi
+  - name: eluosi-justhost
     type: ss
     server: 91.206.92.176
     port: 35030
