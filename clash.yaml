@@ -117,7 +117,7 @@ proxies:
     network: ws    # 网路类型 WS HTTP 等
     ws-opts:
      path: /af81144dc252b94/
-  - name: usa2
+  - name: usa-dmit
     type: ss
     server: 154.17.18.139
     port: 1499
@@ -158,6 +158,7 @@ proxy-groups:
     proxies:
       - eluosi
       - hk-dogyun
+      - usa-dmit
 rules:
 #  - DOMAIN-SUFFIX,v255mg.com,Work
   - DOMAIN-SUFFIX,t.me,PROXY
