@@ -164,7 +164,7 @@ proxy-groups:
 #       - usa-dmit
 rules:
 #  - DOMAIN-SUFFIX,v255mg.com,Work
-  - DOMAIN-SUFFIX,t.me,PROXY
+#   - DOMAIN-SUFFIX,t.me,PROXY
 #   - DOMAIN-SUFFIX,telegram.org,PROXY
 #  - IP-CIDR,45.61.236.74/22,Work
   - GEOIP,CN,DIRECT
