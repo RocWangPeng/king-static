@@ -145,6 +145,23 @@ proxies:
     #udp: true
     protocol: auth_sha1_v4
     obfs: http_simple
+  - name: "India-work3" # 软件显示的节点名字
+    type: vmess # 代理类型
+    server: inlsjlw.com  # 服务器 IP
+    port: 443 #  端口号
+    uuid: be182928-d57c-43bc-bb8f-cd0038924943
+    alterId: 0  #额外的 ID
+    cipher: auto
+    #上面几行为必选参数
+    #下面几行为可选参数  根据你的配置情况来
+    # udp: true    #默认不开启
+    tls: true      #TLS 开启
+    # skip-cert-verify: true     #默认不开启
+    # network: ws    # 网路类型 WS HTTP 等
+    ws-path: /0ea70e497192b88/  # 路径
+    # ws-headers:     #默认不开启
+    #  Host: v2ray.com    # HOST
+
  # 代理组策略	
 proxy-groups:
   - name: PROXY
