@@ -84,25 +84,26 @@ secret: ''
 #  #   - http/1.1
 #  # skip-cert-verify: true
 
+#   - name: hk-work
+#     type: vmess # 代理类型
+#     server: hkhhdan.com  # 服务器 IP
+#     port: 443 #  端口号
+#     uuid: 7fda537a-174a-4e6e-a1f8-c2fffbb83c00
+#     alterId: 2  #额外的 ID
+#     cipher: auto
+#     #上面几行为必选参数
+#     #下面几行为可选参数  根据你的配置情况来
+#     # udp: true    #默认不开启
+#     tls: true      #TLS 开启
+#     # skip-cert-verify: true     #默认不开启
+#     network: ws    # 网路类型 WS HTTP 等
+#     ws-opts:
+     path: /87e0e7d0/
+
 
 # 配置开始
 proxies:
-  - name: hk-work
-    type: vmess # 代理类型
-    server: hkhhdan.com  # 服务器 IP
-    port: 443 #  端口号
-    uuid: 7fda537a-174a-4e6e-a1f8-c2fffbb83c00
-    alterId: 2  #额外的 ID
-    cipher: auto
-    #上面几行为必选参数
-    #下面几行为可选参数  根据你的配置情况来
-    # udp: true    #默认不开启
-    tls: true      #TLS 开启
-    # skip-cert-verify: true     #默认不开启
-    network: ws    # 网路类型 WS HTTP 等
-    ws-opts:
-     path: /87e0e7d0/
-  - name: India-work
+  - name: India-jklahblog.com
     type: vmess # 代理类型
     server: jklahblog.com # 服务器 IP
     port: 443 #  端口号
@@ -117,7 +118,7 @@ proxies:
     network: ws    # 网路类型 WS HTTP 等
     ws-opts:
      path: /af81144dc252b94/
-  - name: "India-work3" # 软件显示的节点名字
+  - name: "India-inlsjlw.com-直连" # 软件显示的节点名字
     type: vmess # 代理类型
     server: inlsjlw.com  # 服务器 IP
     port: 443 #  端口号
@@ -132,6 +133,21 @@ proxies:
     network: ws    # 网路类型 WS HTTP 等
     ws-opts:
       path: /0ea70e497192b88/
+  - name: "India-dakkehk.com-转至jklahblog.com" # 软件显示的节点名字
+    type: vmess # 代理类型
+    server: dakkehk.com  # 服务器 IP
+    port: 443 #  端口号
+    uuid: d7b7be71-c0c1-48f4-acdb-32f740e88c44
+    alterId: 0  #额外的 ID
+    cipher: auto
+    #上面几行为必选参数
+    #下面几行为可选参数  根据你的配置情况来
+    # udp: true    #默认不开启
+    tls: true      #TLS 开启
+    # skip-cert-verify: true     #默认不开启
+    network: ws    # 网路类型 WS HTTP 等
+    ws-opts:
+      path: /175f5d/
   - name: usa-dmit
     type: ss
     server: 154.17.18.139
