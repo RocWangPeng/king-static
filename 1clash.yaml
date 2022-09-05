@@ -103,21 +103,6 @@ secret: ''
 
 # 配置开始
 proxies:
-  - name: India-jklahblog.com
-    type: vmess # 代理类型
-    server: jklahblog.com # 服务器 IP
-    port: 443 #  端口号
-    uuid: 96edbdf0-c8b8-49f2-839e-940698bbf83d
-    alterId: 2  #额外的 ID
-    cipher: auto
-    #上面几行为必选参数
-    #下面几行为可选参数  根据你的配置情况来
-    # udp: true    #默认不开启
-    tls: true      #TLS 开启
-    # skip-cert-verify: true     #默认不开启
-    network: ws    # 网路类型 WS HTTP 等
-    ws-opts:
-     path: /af81144dc252b94/
   - name: India-inlsjlw.com-直连 # 软件显示的节点名字
     type: vmess # 代理类型
     server: inlsjlw.com  # 服务器 IP
