@@ -168,7 +168,6 @@ proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - India-jklahblog.com
       - India-inlsjlw.com-直连
       - India-dakkehk.com-转至jklahblog.com
       - eluosi-justhost
