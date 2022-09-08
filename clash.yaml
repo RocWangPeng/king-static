@@ -117,6 +117,21 @@ proxies:
     network: ws    # 网路类型 WS HTTP 等
     ws-opts:
       path: /175f5d/
+  - name: India-ne38wh92k.com-转至inlsjlw.com # 软件显示的节点名字
+    type: vmess # 代理类型
+    server: ne38wh92k.com  # 服务器 IP
+    port: 443 #  端口号
+    uuid: af4ad924-bd5b-4167-b1e5-790ddcc9179e
+    alterId: 0  #额外的 ID
+    cipher: auto
+    #上面几行为必选参数
+    #下面几行为可选参数  根据你的配置情况来
+    # udp: true    #默认不开启
+    tls: true      #TLS 开启
+    # skip-cert-verify: true     #默认不开启
+    network: ws    # 网路类型 WS HTTP 等
+    ws-opts:
+      path: /1b7ce5cc96b46/
   - name: usa-dmit
     type: ss
     server: 154.17.18.139
@@ -152,6 +167,7 @@ proxy-groups:
     proxies:
       - India-inlsjlw.com-直连
       - India-dakkehk.com-转至jklahblog.com
+      - India-ne38wh92k.com-转至inlsjlw.com
       - eluosi-justhost
       - hk-dogyun
       - usa-dmit
