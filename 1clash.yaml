@@ -166,6 +166,12 @@ proxies:
     port: 47695
     cipher: chacha20-ietf-poly1305
     password: akGvXeowpCct
+  - name: singapura-vultr
+    type: ss
+    server: 139.180.143.220
+    port: 26578
+    cipher: chacha20-ietf-poly1305
+    password: aRSExHFoUZJa
 #   #第三种配置 ssr
 #   - name: "India-work2"               # 软件显示的节点名字
 #     type: ssr                                  # 代理类型
@@ -188,6 +194,7 @@ proxy-groups:
       - India-ne38wh92k.com-转至inlsjlw.com
       - eluosi-justhost
       - hk-dogyun
+      - singapura-vultr
       - usa-dmit
 #   - name: Mine
 #     type: select
