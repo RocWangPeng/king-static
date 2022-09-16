@@ -160,6 +160,12 @@ proxies:
     #udp: true
     protocol: auth_sha1_v4
     obfs: http_simple
+  - name: singapura-vultr
+    type: ss
+    server: 139.180.143.220
+    port: 26578
+    cipher: chacha20-ietf-poly1305
+    password: aRSExHFoUZJa
  # 代理组策略	
 proxy-groups:
   - name: PROXY
@@ -171,6 +177,7 @@ proxy-groups:
       - eluosi-justhost
       - hk-dogyun
       - usa-dmit
+      - singapura-vultr
 #   - name: Mine
 #     type: select
 #     proxies:
