@@ -166,6 +166,12 @@ proxies:
     port: 26578
     cipher: chacha20-ietf-poly1305
     password: aRSExHFoUZJa
+  - name: Angeles-hostdare
+    type: ss
+    server: 173.254.247.123
+    port: 5307
+    cipher: chacha20-ietf-poly1305
+    password: f269vFwWQUCL
  # 代理组策略	
 proxy-groups:
   - name: PROXY
@@ -178,6 +184,7 @@ proxy-groups:
       - hk-dogyun
       - usa-dmit
       - singapura-vultr
+      - Angeles-hostdare
 #   - name: Mine
 #     type: select
 #     proxies:
