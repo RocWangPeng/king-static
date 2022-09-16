@@ -172,6 +172,12 @@ proxies:
     port: 26578
     cipher: chacha20-ietf-poly1305
     password: aRSExHFoUZJa
+  - name: Angeles-hostdare
+    type: ss
+    server: 173.254.247.123
+    port: 5307
+    cipher: chacha20-ietf-poly1305
+    password: f269vFwWQUCL
 #   #第三种配置 ssr
 #   - name: "India-work2"               # 软件显示的节点名字
 #     type: ssr                                  # 代理类型
@@ -196,6 +202,7 @@ proxy-groups:
       - hk-dogyun
       - singapura-vultr
       - usa-dmit
+      - Angeles-hostdare
 #   - name: Mine
 #     type: select
 #     proxies:
