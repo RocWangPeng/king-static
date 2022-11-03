@@ -121,7 +121,7 @@ proxies:
     type: vmess # 代理类型
     server: ne38wh92k.com  # 服务器 IP
     port: 443 #  端口号
-    uuid: af4ad924-bd5b-4167-b1e5-790ddcc9179e
+    uuid: 2f89fac5-8394-35af-3b3d-444590670123
     alterId: 0  #额外的 ID
     cipher: auto
     #上面几行为必选参数
@@ -131,7 +131,7 @@ proxies:
     # skip-cert-verify: true     #默认不开启
     network: ws    # 网路类型 WS HTTP 等
     ws-opts:
-      path: /1b7ce5cc96b46/
+      path: /ddklllsweersdf/
   - name: usa-dmit
     type: ss
     server: 154.17.18.139
