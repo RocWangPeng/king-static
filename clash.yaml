@@ -160,6 +160,15 @@ proxies:
     #udp: true
     protocol: auth_sha1_v4
     obfs: http_simple
+  - name: "菲律宾"               # 软件显示的节点名字
+    type: ssr                                  # 代理类型
+    server: 8.212.149.40 # 服务器IP
+    port: 13000                                 #  端口号
+    cipher: aes-256-cfb   # 加密方法
+    password: "7WOU3)Sl2k7WOU3)Sl2k7WOU3)Sl2k"                # SS密码
+    #udp: true
+    protocol: auth_sha1_v4
+    obfs: http_simple
   - name: singapura-vultr
     type: ss
     server: 139.180.143.220
