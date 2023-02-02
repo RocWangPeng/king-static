@@ -194,6 +194,7 @@ proxy-groups:
       - usa-dmit
       - singapura-vultr
       - 洛杉矶-hostdare
+      - 菲律宾
 #   - name: Mine
 #     type: select
 #     proxies:
