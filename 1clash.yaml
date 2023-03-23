@@ -180,10 +180,12 @@ proxies:
     password: f269vFwWQUCL
   - name: 菲律宾
     type: ss
-    server: 173.254.247.123
+    server: 8.212.146.46
     port: 13000
     cipher: aes-256-cfb
     password: fXkoGfWfOoDiLsEb
+    protocol: auth_sha1_v4
+    obfs: http_simple
 #   #第三种配置 ssr
 #   - name: "India-work2"               # 软件显示的节点名字
 #     type: ssr                                  # 代理类型
