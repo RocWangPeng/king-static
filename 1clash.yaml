@@ -178,6 +178,12 @@ proxies:
     port: 5307
     cipher: chacha20-ietf-poly1305
     password: f269vFwWQUCL
+  - name: 菲律宾
+    type: ss
+    server: 173.254.247.123
+    port: 13000
+    cipher: aes-256-cfb
+    password: fXkoGfWfOoDiLsEb
 #   #第三种配置 ssr
 #   - name: "India-work2"               # 软件显示的节点名字
 #     type: ssr                                  # 代理类型
