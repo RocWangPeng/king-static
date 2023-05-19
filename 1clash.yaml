@@ -219,7 +219,6 @@ proxy-groups:
       - singapura-vultr
       - usa-dmit
       - 洛杉矶-hostdare
-      - 印度
 #   - name: Mine
 #     type: select
 #     proxies:
