@@ -178,9 +178,17 @@ proxies:
     port: 5307
     cipher: chacha20-ietf-poly1305
     password: f269vFwWQUCL
-  - name: 印度
+  - name: 印度(运营用)
     type: ss
     server: 13.232.14.21
+    port: 50011
+    cipher: aes-256-cfb
+    password: MiOxvqqRFh0P0lSZ1qdARiKxL
+    protocol: auth_sha1_v4
+    obfs: http_simple
+  - name: 印度(技术用)
+    type: ss
+    server: 149.129.138.146
     port: 50011
     cipher: aes-256-cfb
     password: MiOxvqqRFh0P0lSZ1qdARiKxL
