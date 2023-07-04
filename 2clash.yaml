@@ -1,0 +1,247 @@
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+allow-lan: false
+mode: Rule
+log-level: info
+external-controller: '0.0.0.0:9090'
+secret: ''
+
+# 文档
+# https://lancellc.gitbook.io/clash/clash-config-file/proxies
+# 代理节点
+
+# Shadowsocks 支持的加密方式:
+#   aes-128-gcm aes-192-gcm aes-256-gcm
+#   aes-128-cfb aes-192-cfb aes-256-cfb
+#   aes-128-ctr aes-192-ctr aes-256-ctr
+#   rc4-md5 chacha20-ietf xchacha20
+#   chacha20-ietf-poly1305 xchacha20-ietf-poly1305
+
+# 配置范本
+# Shadowsocks 配置范本
+# 第一种配置
+#- name: "你的SS节点1"               # 软件显示的节点名字
+#  type: ss                                  # 代理类型
+#  server: 1.2.4.8                          # 服务器 IP
+#  port: 443                                 #  端口号
+#  cipher: chacha20-ietf-poly1305   # 加密方法
+#  password: "password"                # SS 密码
+#  # udp: true                                #默认不开启
+  
+#第二种配置
+# Shadowsocks + simple-obfs   配置范本
+#- name: "你的SS节点2"
+#  type: ss
+#  server: 1.2.4.8
+#  port: 443
+#  cipher: chacha20-ietf-poly1305
+#  password: "password"
+#  plugin: obfs
+#  plugin-opts:                 
+#    mode: tls # or http               #  大部分选择 HTTP
+#    # host: bing.com                  #  伪装
+
+# 第三种配置 ssr
+#- name: "你的SS节点1"               # 软件显示的节点名字
+#  type: ssr                                  # 代理类型
+#  server: 1.2.4.8                          # 服务器IP
+#  port: 443                                 #  端口号
+#  cipher: chacha20-ietf-poly1305   # 加密方法
+#  password: "password"                # SS密码
+#  #udp: true
+#  protocol: auth_sha1_v4
+#  obfs: http_simple
+ 
+# VMess 的配置
+#- name: "你的V2RAY节点1" # 软件显示的节点名字
+#  type: vmess # 代理类型
+#  server: v2rayssr.com # 服务器 IP
+#  port: 443 #  端口号
+#  uuid: a3482e88-686a-4a58-8126-99c9df64b7bf
+#  alterId: 64  #额外的 ID
+#  cipher: auto
+#  #上面几行为必选参数
+#  #下面几行为可选参数  根据你的配置情况来
+#  # udp: true    #默认不开启
+#  # tls: true      #TLS 开启
+#  # skip-cert-verify: true     #默认不开启
+#  # network: ws    # 网路类型 WS HTTP 等
+#  # ws-path: /path  # 路径
+#  # ws-headers:     #默认不开启
+#  #  Host: v2ray.com    # HOST
+
+# Trojan 的配置
+#- name: "trojan"
+#  type: trojan
+#  server: server
+#  port: 443
+#  password: yourpsk
+#  # udp: true
+#  # sni: example.com # aka server name
+#  # alpn:
+#  #   - h2
+#  #   - http/1.1
+#  # skip-cert-verify: true
+
+#   - name: hk-work
+#     type: vmess # 代理类型
+#     server: hkhhdan.com  # 服务器 IP
+#     port: 443 #  端口号
+#     uuid: 7fda537a-174a-4e6e-a1f8-c2fffbb83c00
+#     alterId: 2  #额外的 ID
+#     cipher: auto
+#     #上面几行为必选参数
+#     #下面几行为可选参数  根据你的配置情况来
+#     # udp: true    #默认不开启
+#     tls: true      #TLS 开启
+#     # skip-cert-verify: true     #默认不开启
+#     network: ws    # 网路类型 WS HTTP 等
+#     ws-opts:
+#      path: /87e0e7d0/
+
+
+# 配置开始
+proxies:
+  - name: India-inlsjlw.com-直连 # 软件显示的节点名字
+    type: vmess # 代理类型
+    server: inlsjlw.com  # 服务器 IP
+    port: 443 #  端口号
+    uuid: be182928-d57c-43bc-bb8f-cd0038924943
+    alterId: 0  #额外的 ID
+    cipher: auto
+    #上面几行为必选参数
+    #下面几行为可选参数  根据你的配置情况来
+    # udp: true    #默认不开启
+    tls: true      #TLS 开启
+    # skip-cert-verify: true     #默认不开启
+    network: ws    # 网路类型 WS HTTP 等
+    ws-opts:
+      path: /0ea70e497192b88/
+  - name: India-dakkehk.com-转至jklahblog.com # 软件显示的节点名字
+    type: vmess # 代理类型
+    server: dakkehk.com  # 服务器 IP
+    port: 443 #  端口号
+    uuid: d7b7be71-c0c1-48f4-acdb-32f740e88c44
+    alterId: 0  #额外的 ID
+    cipher: auto
+    #上面几行为必选参数
+    #下面几行为可选参数  根据你的配置情况来
+    # udp: true    #默认不开启
+    tls: true      #TLS 开启
+    # skip-cert-verify: true     #默认不开启
+    network: ws    # 网路类型 WS HTTP 等
+    ws-opts:
+      path: /175f5d/
+  - name: India-ne38wh92k.com-转至inlsjlw.com # 软件显示的节点名字
+    type: vmess # 代理类型
+    server: ne38wh92k.com  # 服务器 IP
+    port: 443 #  端口号
+    uuid: 2f89fac5-8394-35af-3b3d-444590670123
+    alterId: 0  #额外的 ID
+    cipher: auto
+    #上面几行为必选参数
+    #下面几行为可选参数  根据你的配置情况来
+    # udp: true    #默认不开启
+    tls: true      #TLS 开启
+    # skip-cert-verify: true     #默认不开启
+    network: ws    # 网路类型 WS HTTP 等
+    ws-opts:
+      path: /ddklllsweersdf/
+  - name: usa-dmit
+    type: ss
+    server: 154.17.18.139
+    port: 1499
+    cipher: chacha20-ietf-poly1305
+    password: Zc3c1FtnWm7d
+  - name: eluosi-justhost
+    type: ss
+    server: 91.206.92.176
+    port: 35030
+    cipher: chacha20-ietf-poly1305
+    password: FCx0i7b33H9G
+  - name: hk-dogyun
+    type: ss
+    server: 45.89.234.2
+    port: 47695
+    cipher: chacha20-ietf-poly1305
+    password: akGvXeowpCct
+  - name: singapura-vultr
+    type: ss
+    server: 139.180.143.220
+    port: 26578
+    cipher: chacha20-ietf-poly1305
+    password: aRSExHFoUZJa
+  - name: 洛杉矶-hostdare
+    type: ss
+    server: 173.254.247.123
+    port: 5307
+    cipher: chacha20-ietf-poly1305
+    password: f269vFwWQUCL
+  - name: 印度(运营用)
+    type: ss
+    server: 13.232.14.21
+    port: 50011
+    cipher: aes-256-cfb
+    password: MiOxvqqRFh0P0lSZ1qdARiKxL
+    protocol: auth_sha1_v4
+    obfs: http_simple
+  - name: 印度(技术用)
+    type: ss
+    server: 149.129.138.146
+    port: 50011
+    cipher: aes-256-cfb
+    password: MiOxvqqRFh0P0lSZ1qdARiKxL
+    protocol: auth_sha1_v4
+    obfs: http_simple
+  - name: 印度(技术用2)
+    type: ss
+    server: 13.232.247.127
+    port: 50011
+    cipher: aes-256-cfb
+    password: MiOxvqqRFh0P0lSZ1qdARiKxL
+    protocol: auth_sha1_v4
+    obfs: http_simple
+  - name: 印度(技术用3)
+    type: ss
+    server: 13.233.56.52
+    port: 50011
+    cipher: aes-256-cfb
+    password: MiOxvqqRFh0P0lSZ1qdARiKxL
+    protocol: auth_sha1_v4
+    obfs: http_simple
+#   #第三种配置 ssr
+#   - name: "India-work2"               # 软件显示的节点名字
+#     type: ssr                                  # 代理类型
+#     server: 147.139.65.214 # 服务器IP
+#     port: 8888                                 #  端口号
+#     cipher: aes-256-cfb   # 加密方法
+#     password: "GFHhujkjkY"                # SS密码
+#     #udp: true
+#     protocol: auth_sha1_v4
+#     obfs: http_simple
+
+
+ # 代理组策略	
+proxy-groups:
+  - name: PROXY
+    type: select
+    proxies:
+      - India-inlsjlw.com-直连
+      - India-dakkehk.com-转至jklahblog.com
+      - India-ne38wh92k.com-转至inlsjlw.com
+      - eluosi-justhost
+      - hk-dogyun
+      - singapura-vultr
+      - usa-dmit
+      - 洛杉矶-hostdare
+#   - name: Mine
+#     type: select
+#     proxies:
+#       - eluosi
+#       - hk-dogyun
+#       - usa-dmit
+
+rules:
+  - MATCH,PROXY
