@@ -218,6 +218,14 @@ proxies:
     password: 0P0lSZ1qdARiKxLMiOxvqqRFh
     protocol: auth_sha1_v4
     obfs: http_simple
+  - name: 运营52
+    type: ss
+    server: 13.200.99.52
+    port: 50011
+    cipher: aes-256-cfb
+    password: 0P0lSZ1qdARiKxLMiOxvqqRFh
+    protocol: auth_sha1_v4
+    obfs: http_simple
 #   #第三种配置 ssr
 #   - name: "India-work2"               # 软件显示的节点名字
 #     type: ssr                                  # 代理类型
